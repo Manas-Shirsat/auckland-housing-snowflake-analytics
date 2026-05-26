@@ -1,8 +1,14 @@
-# auckland-housing-snowflake-analytics
-End-to-end cloud analytics project using Snowflake SQL and Power BI to analyze Auckland housing market trends.
 # Auckland Housing Snowflake Analytics
 
-Cloud analytics project using Snowflake SQL and Power BI to analyze Auckland housing market trends.
+## Project Overview
+This project analyzes Auckland housing market trends using Snowflake and Power BI.
+
+The goal is to build an end-to-end cloud analytics workflow including:
+- Data ingestion
+- SQL transformation
+- Cloud warehousing
+- Analytics reporting
+- Business insights
 
 ## Tech Stack
 - Snowflake
@@ -11,7 +17,15 @@ Cloud analytics project using Snowflake SQL and Power BI to analyze Auckland hou
 - GitHub
 
 ## Current Progress
-- Warehouse setup
-- Database and schema creation
-- CSV ingestion
-- Data transformation
+- Created Snowflake warehouse
+- Created database and schema
+- Loaded housing CSV data
+- Built raw and cleaned tables
+- Performed SQL datatype transformations
+
+## Planned Enhancements
+- Advanced SQL analytics
+- Power BI integration
+- Automated pipelines
+- Regional trend analysis
+- Rental yield insights
