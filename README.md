@@ -29,3 +29,7 @@ The goal is to build an end-to-end cloud analytics workflow including:
 - Automated pipelines
 - Regional trend analysis
 - Rental yield insights
+
+## Data Source
+
+This project uses publicly available Auckland housing market reports from Barfoot & Thompson to explore regional sales trends, pricing patterns, and bedroom-level housing analytics.
