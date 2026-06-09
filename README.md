@@ -33,6 +33,12 @@ Key findings:
 * Comparative suburb and regional analysis provided insights into potential undervalued investment locations.
 * Regional benchmarks were used to assess relative suburb performance and market positioning.
 
+<img width="637" height="268" alt="Screenshot 2026-06-09 at 4 24 13 PM" src="https://github.com/user-attachments/assets/5e826c83-760a-4b08-bdba-361b927c0914" />
+
+
+<img width="637" height="268" alt="image" src="https://github.com/user-attachments/assets/ef7b1bc2-703d-44a6-8a87-938f9bff4db0" />
+
+
 ## Repository Structure
 
 ```text
