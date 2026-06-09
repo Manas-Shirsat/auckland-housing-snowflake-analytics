@@ -1,88 +1,55 @@
-# Auckland Housing Snowflake Analytics
+## Dashboard Outputs and Insights
 
-## Project Overview
-This project analyzes Auckland housing market trends using Snowflake and Power BI.
+### Auckland Market Overview
 
-The goal is to build an end-to-end cloud analytics workflow including:
-- Data ingestion
-- SQL transformation
-- Cloud warehousing
-- Analytics reporting
-- Business insights
+The Auckland housing market experienced a correction between 2021 and 2025, with average sales prices declining from peak levels while rental prices continued to increase.
 
-## Tech Stack
-- Snowflake
-- SQL
-- Power BI
-- GitHub
+Key findings:
 
-## Current Progress
-- Created Snowflake warehouse
-- Created database and schema
-- Loaded housing CSV data
-- Built raw and cleaned tables
-- Performed SQL datatype transformations
+* Average sales prices decreased from approximately $1.35M to $1.08M.
+* Average rental prices increased from approximately $620 to $740 per week.
+* Rental yields improved as rents increased while property values softened.
+* Sales activity remained concentrated in major Auckland regions including South Auckland, North Shore, Eastern Suburbs, and West Auckland.
 
-## Planned Enhancements
-- Advanced SQL analytics
-- Power BI integration
-- Automated pipelines
-- Regional trend analysis
-- Rental yield insights
+### Auckland Investment Analysis
 
-## Data Source
+Rental yield analysis was performed across Auckland regions to identify potential investment opportunities.
 
-This project uses publicly available Auckland housing market reports from Barfoot & Thompson to explore regional sales trends, pricing patterns, and bedroom-level housing analytics.
+Key findings:
 
-## Data Preparation
+* Rental yields varied significantly across regions.
+* Auckland CBD and selected suburban regions demonstrated stronger rental return potential.
+* Regional comparisons highlighted areas where rental growth outpaced property value growth.
+* Market conditions indicate improved cash-flow opportunities compared to peak property pricing periods.
 
-Prior to loading data into Snowflake, Excel Power Query was used to prepare and transform the source datasets.
+### Suburb Performance Analysis
 
-Key transformations included:
+Suburb-level analysis was conducted to compare current market performance against historical averages.
 
-* Cleaning and standardizing source data
-* Unpivoting monthly housing metrics into a relational structure
-* Preparing datasets for Snowflake ingestion
-* Exporting transformed datasets as CSV files
+Key findings:
 
-This preprocessing stage improved data quality and enabled efficient downstream analysis.
+* Several suburbs were identified as trading below their five-year average prices.
+* Growth analysis highlighted top-performing suburbs within each Auckland region.
+* Comparative suburb and regional analysis provided insights into potential undervalued investment locations.
+* Regional benchmarks were used to assess relative suburb performance and market positioning.
 
-## Data Engineering Workflow
+## Repository Structure
 
-The project follows an end-to-end analytics workflow:
+```text
+/sql
+  - Environment setup scripts
+  - Data cleaning and transformation queries
+  - Business view creation scripts
 
-Barfoot & Thompson Housing Reports
-→ Excel Power Query Transformation
-→ CSV Data Preparation
-→ Snowflake Data Ingestion
-→ SQL Data Cleaning and Transformation
-→ Data Modelling and Business Views
-→ Power BI Reporting and Analysis
+/screenshots
+  - Snowflake implementation screenshots
+  - Data transformation workflows
+  - Dashboard outputs and visualisations
 
-## Snowflake Implementation
+/docs
+  - Project architecture
+  - Business questions
+  - Data modelling documentation
 
-Completed Snowflake development activities include:
-
-* Warehouse creation and configuration
-* Database and schema setup
-* Raw data ingestion
-* Data type standardization and cleansing
-* Sales, rental, and volume dataset integration
-* Suburb-to-region mapping
-* Business reporting view creation
-* Region-level housing analytics model development
-
-## Key Business Questions
-
-This project aims to answer the following business questions:
-
-* Which Auckland regions have experienced the strongest housing price growth?
-* How do rental prices compare with property sale prices across regions?
-* Which regions generate the highest rental yield potential?
-* How have housing sales volumes changed over time?
-* What trends exist across different bedroom categories?
-* How do housing market conditions vary across Auckland suburbs and regions?
-
-## Development Approach
-
-AI-assisted development tools, including Snowflake Cortex, were used to accelerate SQL development and data transformation workflows. All generated SQL was reviewed, tested, debugged, and validated to ensure accurate joins, correct business logic, and reliable analytical outputs.
+README.md
+```
