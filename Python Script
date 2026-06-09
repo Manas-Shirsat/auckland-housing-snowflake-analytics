@@ -1,0 +1,33 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = housing_data.copy()
+
+month_map = {'January': 1, 'February': 2, 'March': 3, 'April': 4, 'May': 5, 'June': 6,
+             'July': 7, 'August': 8, 'September': 9, 'October': 10, 'November': 11, 'December': 12}
+df['MONTH_NUM'] = df['MONTH'].map(month_map)
+df['DATE'] = pd.to_datetime(df['YEAR'].astype(str) + '-' + df['MONTH_NUM'].astype(str) + '-01')
+df = df.sort_values('DATE')
+
+fig, ax1 = plt.subplots(figsize=(14, 6))
+
+color_rent = '#1f77b4'
+ax1.set_xlabel('Date')
+ax1.set_ylabel('Avg Rent ($)', color=color_rent)
+ax1.plot(df['DATE'], df['AVG_RENT'], color=color_rent, linewidth=2, label='Avg Rent')
+ax1.tick_params(axis='y', labelcolor=color_rent)
+
+ax2 = ax1.twinx()
+color_sales = '#ff7f0e'
+ax2.set_ylabel('Avg Sales Price ($)', color=color_sales)
+ax2.plot(df['DATE'], df['AVG_SALES'], color=color_sales, linewidth=2, label='Avg Sales')
+ax2.tick_params(axis='y', labelcolor=color_sales)
+
+lines1, labels1 = ax1.get_legend_handles_labels()
+lines2, labels2 = ax2.get_legend_handles_labels()
+ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper left')
+
+plt.title('Avg Rent vs Avg Sales Price (Jan 2021 - Dec 2025)')
+fig.tight_layout()
+plt.show()
